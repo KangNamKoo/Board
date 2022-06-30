@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* header */
+#head_menu{
+	border-bottom: 0.5px solid gray;
+}
+
+/* Main */
+#MainText {
+	text-align: center;
+	margin-top: 20px;
+}
+#content{
+	margin-top: 40px;
+	text-align: center;
+}
+#content_text{
+	color: white;
+}

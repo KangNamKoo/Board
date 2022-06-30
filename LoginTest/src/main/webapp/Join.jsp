@@ -4,8 +4,12 @@
 <head>
 <meta charset="UTF-8">
 <title>회원가입</title>
+<%@ include file="/include/lib.jsp"%>
 </head>
 <body>
+<%@ include file="/include/header.jsp"%>
+	<div class="container-fluid">
+	
 	<h1>Sign Up Page</h1>
 	<form action="/Join.do" method="post">
 		<div>
@@ -22,5 +26,6 @@
 		</div>
 		<button type="submit" onclick="location='/LoginPage.jsp'">회원가입</button>
 	</form>
+	</div>
 </body>
 </html>

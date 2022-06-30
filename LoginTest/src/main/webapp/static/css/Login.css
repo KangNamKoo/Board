@@ -1,0 +1,25 @@
+@charset "UTF-8";
+#login_text {
+	text-align: center;
+}
+
+#login {
+	text-align: center;
+	height: 400px;
+	width: 500px;
+	background-color: #DEDEDE;
+	margin: auto;
+	margin-top: 80px;
+	border-radius: 18px 18px 18px 18px;
+}
+
+#id {
+	margin-top: 80px;
+}
+
+#pw {
+	margin-top: 20px;
+}
+#login_sbmit{
+	background-color: blue;
+}

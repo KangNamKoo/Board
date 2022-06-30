@@ -4,17 +4,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Main Page</title>
+<%@ include file="/include/lib.jsp"%>
 </head>
 <body>
-	<h1>Main Page</h1>
-	<h3>메인입니다.</h3>
-	<div>
-		<a href="/Logout.do">로그아웃</a>
+	<%@ include file="/include/header.jsp"%>
+	<h1 id="MainText">Main Page</h1>
+
+	<div class="container" id="content">
+		<div id=content_text class="row">
+			<div onclick="location.href='/Bbs.do'" class="col" style="border-right: 0.5px solid gray; background-color: #4169e1; cursor: pointer; border-radius: 13px 0px 0px 13px;"><h3>게시판</h3></div>
+			<div onclick="location.href='/Bbs.do'" class="col" style="border-right: 0.5px solid gray; background-color: #4169e1; cursor: pointer;"><h3>게시판</h3></div>
+			<div onclick="location.href='/Bbs.do'" class="col" style="border-right: 0.5px solid gray; background-color: #4169e1; cursor: pointer; border-radius: 0px 13px 13px 0px;"><h3>게시판</h3></div>
+		</div>
 	</div>
-	<div>
-		<a href="/Bbs.do">게시판</a>
-	</div>
-	로그인 상태 :
-	<%=session.getAttribute("bbs_Id")%>
+	<%-- 로그인 상태 :
+	<%=session.getAttribute("bbs_Id")%> --%>
 </body>
 </html>

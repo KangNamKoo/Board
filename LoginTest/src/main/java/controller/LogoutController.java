@@ -31,7 +31,7 @@ public class LogoutController extends HttpServlet {
 		// 세션 해제
 		session.invalidate();
 		try {
-			response.sendRedirect("/LoginPage.jsp");
+			response.sendRedirect("/Main.jsp");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
