@@ -41,8 +41,8 @@ public class Bbs_UpdateProc extends HttpServlet {
 		dto.setBbs_Regdate(bbs_Regdate);
 		dto.setBbs_Num(bbs_Num);
 		dao.update(dto);
-		
-		response.sendRedirect("/Bbs_View.do?bbs_Num="+bbs_Num);
+
+		response.sendRedirect("/Bbs_View.do?bbs_Num=" + bbs_Num);
 
 	}
 

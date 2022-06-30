@@ -1,16 +1,16 @@
 package DTO;
 
 public class Board_DTO {
-	
+
 	private String bbs_Num;
 	private String bbs_Title;
 	private String bbs_Content;
 	private String bbs_Regdate;
-	
+
 	public Board_DTO() {
-		
+
 	}
-	
+
 	public Board_DTO(String bbs_Num, String bbs_Title, String bbs_Content, String bbs_Regdate) {
 		super();
 		this.bbs_Num = bbs_Num;
@@ -50,7 +50,5 @@ public class Board_DTO {
 	public void setBbs_Regdate(String bbs_Regdate) {
 		this.bbs_Regdate = bbs_Regdate;
 	}
-	
-	
 
 }

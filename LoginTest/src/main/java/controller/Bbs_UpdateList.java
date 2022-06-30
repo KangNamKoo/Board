@@ -36,7 +36,7 @@ public class Bbs_UpdateList extends HttpServlet {
 		bDto = dao.selectById(bbs_Num);
 
 		req.setAttribute("bbs_view", bDto);
-		
+
 		req.getRequestDispatcher("/BbsUpdate.jsp").forward(req, response);
 
 	}

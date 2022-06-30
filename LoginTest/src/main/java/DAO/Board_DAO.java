@@ -95,14 +95,14 @@ public class Board_DAO {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} 
+		}
 		return bDto;
 	}
-	
+
 	// 게시판 수정
 	public int update(Board_DTO bDto) {
 		String SQL = "UPDATE board SET bbs_Title =?, bbs_Content =?, bbs_Regdate =? WHERE bbs_Num =?";
-		
+
 		try {
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, bDto.getBbs_Title());
@@ -110,25 +110,24 @@ public class Board_DAO {
 			pstmt.setString(3, bDto.getBbs_Regdate());
 			pstmt.setString(4, bDto.getBbs_Num());
 			result = pstmt.executeUpdate();
-		} catch(SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return result;
 	}
-	
-	//게시판 삭제
+
+	// 게시판 삭제
 	public int delete(int bbs_Num) {
 		String SQL = "DELETE FROM board WHERE bbs_Num = ?";
-		
+
 		try {
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setInt(1, bbs_Num);
 			result = pstmt.executeUpdate();
-		} catch(SQLException e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return result;
-	} 
-		
+	}
 
 }

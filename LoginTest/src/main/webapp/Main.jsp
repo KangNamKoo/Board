@@ -15,6 +15,6 @@
 		<a href="/Bbs.do">게시판</a>
 	</div>
 	로그인 상태 :
-	<%=session.getAttribute("bbs_Id") %>
+	<%=session.getAttribute("bbs_Id")%>
 </body>
 </html>

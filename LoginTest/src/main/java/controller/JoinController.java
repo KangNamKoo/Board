@@ -19,36 +19,36 @@ import DTO.Member_DTO;
 @WebServlet("/Join.do")
 public class JoinController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public JoinController() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
-protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException{
-    	
-    	String bbs_Id = req.getParameter("bbs_Id");
-    	String bbs_Pw = req.getParameter("bbs_Pw");
-    	String bbs_Name = req.getParameter("bbs_Name");
-    	String bbs_Tel = req.getParameter("bbs_Tel");
-    	
-    	try {
-    		Member_DAO dao = new Member_DAO();
-    		Member_DTO dto = new Member_DTO(bbs_Id, bbs_Pw, bbs_Name, bbs_Tel);
-    		dao.join(dto);
-    	} catch(Exception e) {
-    		e.printStackTrace();
-    		PrintWriter script = response.getWriter();
-    		script.println("<script>");
-    		script.println("alert('database error')");
-    		script.println("</script>");
-    	}
-    	
-    	response.sendRedirect("/LoginPage.jsp");
-    	
-    }
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public JoinController() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
+
+		String bbs_Id = req.getParameter("bbs_Id");
+		String bbs_Pw = req.getParameter("bbs_Pw");
+		String bbs_Name = req.getParameter("bbs_Name");
+		String bbs_Tel = req.getParameter("bbs_Tel");
+
+		try {
+			Member_DAO dao = new Member_DAO();
+			Member_DTO dto = new Member_DTO(bbs_Id, bbs_Pw, bbs_Name, bbs_Tel);
+			dao.join(dto);
+		} catch (Exception e) {
+			e.printStackTrace();
+			PrintWriter script = response.getWriter();
+			script.println("<script>");
+			script.println("alert('database error')");
+			script.println("</script>");
+		}
+
+		response.sendRedirect("/LoginPage.jsp");
+
+	}
 
 }
