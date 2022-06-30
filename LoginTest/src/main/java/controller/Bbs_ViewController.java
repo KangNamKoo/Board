@@ -18,7 +18,7 @@ import DTO.Board_DTO;
 /**
  * Servlet implementation class listController
  */
-@WebServlet("/Bbs_view.do")
+@WebServlet("/Bbs_View.do")
 public class Bbs_ViewController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -40,7 +40,7 @@ protected void service(HttpServletRequest req, HttpServletResponse response) thr
     	
     	req.setAttribute("bbs_view", bDto);
     	
-    	req.getRequestDispatcher("/Bbs_view.jsp").forward(req, response);
+    	req.getRequestDispatcher("/Bbs_View.jsp").forward(req, response);
     	
     }
 

@@ -35,7 +35,6 @@ public class Bbs_UpdateProc extends HttpServlet {
 		String bbs_Regdate = req.getParameter("bbs_Regdate");
 
 		Board_DAO dao = new Board_DAO();
-//		Board_DTO dto = new Board_DTO(bbs_Num, bbs_Title, bbs_Content, bbs_Regdate);
 		Board_DTO dto = new Board_DTO();
 		dto.setBbs_Title(bbs_Title);
 		dto.setBbs_Content(bbs_Content);
@@ -43,7 +42,7 @@ public class Bbs_UpdateProc extends HttpServlet {
 		dto.setBbs_Num(bbs_Num);
 		dao.update(dto);
 		
-		response.sendRedirect("/Bbs_view.do?bbs_Num="+bbs_Num);
+		response.sendRedirect("/Bbs_View.do?bbs_Num="+bbs_Num);
 
 	}
 

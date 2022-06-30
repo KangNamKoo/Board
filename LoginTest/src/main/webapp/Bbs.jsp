@@ -20,7 +20,7 @@ tr td {
 	%>
 	<h1>List Page</h1>
 	목록
-	<button type="button" onclick="location='/bbsCreate.jsp'">작성하기</button>
+	<button type="button" onclick="location='/BbsCreate.jsp'">작성하기</button>
 	<a href="/Main.jsp">Home</a>
 	<div>
 		<table style="border: 1px solid black;">
