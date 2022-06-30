@@ -29,9 +29,6 @@ public class Bbs_UpdateProc extends HttpServlet {
 
 	protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 
-		req.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
-
 		String bbs_Num = req.getParameter("bbs_Num");
 		String bbs_Title = req.getParameter("bbs_Title");
 		String bbs_Content = req.getParameter("bbs_Content");
@@ -46,7 +43,7 @@ public class Bbs_UpdateProc extends HttpServlet {
 		dto.setBbs_Num(bbs_Num);
 		dao.update(dto);
 		
-		response.sendRedirect("/bbs_view.do?bbs_Num="+bbs_Num);
+		response.sendRedirect("/Bbs_view.do?bbs_Num="+bbs_Num);
 
 	}
 

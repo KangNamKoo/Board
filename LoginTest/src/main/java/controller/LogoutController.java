@@ -11,14 +11,14 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class logoutController
  */
-@WebServlet("/logout.do")
-public class logoutController extends HttpServlet {
+@WebServlet("/Logout.do")
+public class LogoutController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public logoutController() {
+    public LogoutController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -31,7 +31,7 @@ public class logoutController extends HttpServlet {
     	// 세션 해제
     	session.invalidate();
     	try {
-    		response.sendRedirect("/loginPage.jsp");
+    		response.sendRedirect("/LoginPage.jsp");
     	} catch(Exception e) {
     		e.printStackTrace();
     	}

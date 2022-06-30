@@ -15,22 +15,19 @@ import DTO.Board_DTO;
 /**
  * Servlet implementation class listCreateController
  */
-@WebServlet("/bbsCreate.do")
-public class bbsCreateController extends HttpServlet {
+@WebServlet("/BbsCreate.do")
+public class BbsCreateController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public bbsCreateController() {
+    public BbsCreateController() {
         super();
         // TODO Auto-generated constructor stub
     }
 
 protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException{
-    	
-    	req.setCharacterEncoding("utf-8");
-    	response.setCharacterEncoding("utf-8");
     	
     	String bbs_Num = req.getParameter("bbs_Num");
     	String bbs_Title = req.getParameter("bbs_Title");
@@ -45,7 +42,7 @@ protected void service(HttpServletRequest req, HttpServletResponse response) thr
     		e.printStackTrace();
     	}
     	
-    	response.sendRedirect("/bbs.do");
+    	response.sendRedirect("/Bbs.do");
     	
     }
 

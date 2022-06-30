@@ -19,21 +19,19 @@ import DTO.Member_DTO;
 /**
  * Servlet implementation class logincontroller
  */
-@WebServlet("/loginPage.do")
-public class logincontroller extends HttpServlet {
+@WebServlet("/LoginPage.do")
+public class Logincontroller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public logincontroller() {
+    public Logincontroller() {
         super();
         // TODO Auto-generated constructor stub
     }
 
     protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException{
-    	
-    	response.setCharacterEncoding("utf-8");
     	
     	String bbs_Id = req.getParameter("bbs_Id");
     	String bbs_Pw = req.getParameter("bbs_Pw");
@@ -43,7 +41,7 @@ public class logincontroller extends HttpServlet {
     	HttpSession session = req.getSession();
     	if(login_Result == 1) {
     		session.setAttribute("bbs_Id", bbs_Id);
-    		response.sendRedirect("/main.jsp");
+    		response.sendRedirect("/Main.jsp");
     	}else if(login_Result == 0) {
     		PrintWriter script = response.getWriter();
     		script.println("<script>");

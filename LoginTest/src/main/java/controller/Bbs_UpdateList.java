@@ -29,9 +29,6 @@ public class Bbs_UpdateList extends HttpServlet {
 
 	protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 
-		req.setCharacterEncoding("utf-8");
-		response.setCharacterEncoding("utf-8");
-
 		String bbs_Num = req.getParameter("bbs_Num");
 
 		Board_DAO dao = new Board_DAO();
@@ -40,7 +37,7 @@ public class Bbs_UpdateList extends HttpServlet {
 
 		req.setAttribute("bbs_view", bDto);
 		
-		req.getRequestDispatcher("/bbsUpdate.jsp").forward(req, response);
+		req.getRequestDispatcher("/BbsUpdate.jsp").forward(req, response);
 
 	}
 

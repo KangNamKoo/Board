@@ -16,21 +16,19 @@ import DTO.Member_DTO;
 /**
  * Servlet implementation class joinController
  */
-@WebServlet("/join.do")
-public class joinController extends HttpServlet {
+@WebServlet("/Join.do")
+public class JoinController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public joinController() {
+    public JoinController() {
         super();
         // TODO Auto-generated constructor stub
     }
 
 protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException{
-    	
-    	req.setCharacterEncoding("utf-8");
     	
     	String bbs_Id = req.getParameter("bbs_Id");
     	String bbs_Pw = req.getParameter("bbs_Pw");
@@ -49,7 +47,7 @@ protected void service(HttpServletRequest req, HttpServletResponse response) thr
     		script.println("</script>");
     	}
     	
-    	response.sendRedirect("/loginPage.jsp");
+    	response.sendRedirect("/LoginPage.jsp");
     	
     }
 

@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1>Login Page</h1>
-	<form action="/loginPage.do" method="post">
+	<form action="/LoginPage.do" method="post">
 		ID : <input type="text" name="bbs_Id"> PW : <input type="password" name="bbs_Pw"> <input type="submit" value="로그인">
 	</form>
 	로그인 상태 :

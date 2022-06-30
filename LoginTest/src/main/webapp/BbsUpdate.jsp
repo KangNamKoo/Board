@@ -15,7 +15,7 @@
 <body>
 	<h1>수정페이지</h1>
 	<a href="/main.jsp">Home</a>
-	<a href="/list.jsp">뒤로가기</a>
+	<a href="/Bbs_View.jsp">뒤로가기</a>
 	<form action="/Bbs_UpdateProc.do" method="post">
 		<div>
 			글번호 : <input type="text" id="num" name="bbs_Num" value="${bbs_view.bbs_Num}">

@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1>Sign Up Page</h1>
-	<form action="/join.do" method="post">
+	<form action="/Join.do" method="post">
 		<div>
 			이름 : <input type="text" name="bbs_Name">
 		</div>
@@ -20,7 +20,7 @@
 		<div>
 			휴대폰 번호 : <input type="tel" name="bbs_Tel">
 		</div>
-		<button type="submit" onclick="location='/loginPage.jsp'">회원가입</button>
+		<button type="submit" onclick="location='/LoginPage.jsp'">회원가입</button>
 	</form>
 </body>
 </html>

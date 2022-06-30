@@ -32,9 +32,6 @@ public class Bbs_ViewController extends HttpServlet {
 
 protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException{
     	
-    	req.setCharacterEncoding("utf-8");
-    	response.setCharacterEncoding("utf-8");
-    	
     	String bbs_Num = (String)req.getParameter("bbs_Num");
     	
     	Board_DAO bDao = new Board_DAO();

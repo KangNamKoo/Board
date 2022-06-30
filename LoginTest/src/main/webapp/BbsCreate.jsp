@@ -14,8 +14,8 @@
 </head>
 <body>
 	<h1>작성페이지</h1>
-	<a href="/main.jsp">Home</a>
-	<a href="/list.jsp">뒤로가기</a>
+	<a href="/Main.jsp">Home</a>
+	<a href="/Bbs_View.jsp">뒤로가기</a>
 	<form action="/bbsCreate.do" method="post">
 		<div>
 			글번호 : <input type="text" id="num" name="bbs_Num">

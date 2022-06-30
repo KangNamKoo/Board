@@ -18,21 +18,18 @@ import DAO.Board_DAO;
  * Servlet implementation class listController
  */
 @WebServlet("/Bbs.do")
-public class bbsController extends HttpServlet {
+public class BbsController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public bbsController() {
+    public BbsController() {
         super();
         // TODO Auto-generated constructor stub
     }
 
 protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException{
-    	
-    	req.setCharacterEncoding("utf-8");
-    	response.setCharacterEncoding("utf-8");
     	
     	Board_DAO bDao = new Board_DAO();
     	List list = bDao.getlist();

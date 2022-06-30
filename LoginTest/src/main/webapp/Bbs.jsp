@@ -21,7 +21,7 @@ tr td {
 	<h1>List Page</h1>
 	목록
 	<button type="button" onclick="location='/bbsCreate.jsp'">작성하기</button>
-	<a href="/main.jsp">Home</a>
+	<a href="/Main.jsp">Home</a>
 	<div>
 		<table style="border: 1px solid black;">
 			<tr>
@@ -36,7 +36,7 @@ tr td {
 			%>
 			<tr>
 				<td><%=item.get("bbs_Num")%></td>
-				<td><b><a href="/bbs_view.do?bbs_Num=<%=item.get("bbs_Num")%>"><%=item.get("bbs_Title")%></a></b></td>
+				<td><b><a href="/Bbs_View.do?bbs_Num=<%=item.get("bbs_Num")%>"><%=item.get("bbs_Title")%></a></b></td>
 				<td><%=item.get("bbs_Content")%></td>
 				<td><%=item.get("bbs_Regdate")%></td>
 			</tr>
