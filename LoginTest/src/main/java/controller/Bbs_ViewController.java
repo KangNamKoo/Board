@@ -18,14 +18,14 @@ import DTO.Board_DTO;
 /**
  * Servlet implementation class listController
  */
-@WebServlet("/bbs_view.do")
-public class bbs_ViewController extends HttpServlet {
+@WebServlet("/Bbs_view.do")
+public class Bbs_ViewController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public bbs_ViewController() {
+    public Bbs_ViewController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -39,11 +39,11 @@ protected void service(HttpServletRequest req, HttpServletResponse response) thr
     	
     	Board_DAO bDao = new Board_DAO();
     	Board_DTO bDto = new Board_DTO();
-    	bDto = bDao.selectById(bbs_Num);	// ?? 왜 저기 한번 더 담을까?
+    	bDto = bDao.selectById(bbs_Num);
     	
     	req.setAttribute("bbs_view", bDto);
     	
-    	req.getRequestDispatcher("/bbs_view.jsp").forward(req, response);
+    	req.getRequestDispatcher("/Bbs_view.jsp").forward(req, response);
     	
     }
 

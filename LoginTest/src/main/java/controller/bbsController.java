@@ -17,7 +17,7 @@ import DAO.Board_DAO;
 /**
  * Servlet implementation class listController
  */
-@WebServlet("/bbs.do")
+@WebServlet("/Bbs.do")
 public class bbsController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -37,7 +37,7 @@ protected void service(HttpServletRequest req, HttpServletResponse response) thr
     	Board_DAO bDao = new Board_DAO();
     	List list = bDao.getlist();
     	req.setAttribute("list", list);
-    	req.getRequestDispatcher("/bbs.jsp").forward(req, response);
+    	req.getRequestDispatcher("/Bbs.jsp").forward(req, response);
     	
     }
 

@@ -14,13 +14,13 @@ import DTO.Board_DTO;
  * Servlet implementation class Bbs_DeleteController
  */
 @WebServlet("/Bbs_Delete.do")
-public class Bbs_DeleteController extends HttpServlet {
+public class Bbs_DeleteProc extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Bbs_DeleteController() {
+    public Bbs_DeleteProc() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,7 +34,7 @@ public class Bbs_DeleteController extends HttpServlet {
 		Board_DAO dao = new Board_DAO();
 		dao.delete(Integer.parseInt(bbs_Num));
 		
-		response.sendRedirect("bbs.do");
+		response.sendRedirect("/bbs.do");
 
 	}
 
