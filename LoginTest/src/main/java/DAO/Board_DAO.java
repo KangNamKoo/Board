@@ -67,7 +67,7 @@ public class Board_DAO {
 
 		try {
 			pstmt = conn.prepareStatement(SQL);
-			pstmt.setString(1, bDto.getBbs_Num());
+			pstmt.setInt(1, bDto.getBbs_Num());
 			pstmt.setString(2, bDto.getBbs_Title());
 			pstmt.setString(3, bDto.getBbs_Content());
 			pstmt.setString(4, bDto.getBbs_Regdate());
@@ -88,7 +88,7 @@ public class Board_DAO {
 			pstmt.setString(1, bbs_Num);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
-				bDto.setBbs_Num(rs.getString("bbs_Num"));
+				bDto.setBbs_Num(rs.getInt("bbs_Num"));
 				bDto.setBbs_Title(rs.getString("bbs_Title"));
 				bDto.setBbs_Content(rs.getString("bbs_Content"));
 				bDto.setBbs_Regdate(rs.getString("bbs_Regdate"));
@@ -108,7 +108,7 @@ public class Board_DAO {
 			pstmt.setString(1, bDto.getBbs_Title());
 			pstmt.setString(2, bDto.getBbs_Content());
 			pstmt.setString(3, bDto.getBbs_Regdate());
-			pstmt.setString(4, bDto.getBbs_Num());
+			pstmt.setInt(4, bDto.getBbs_Num());
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();

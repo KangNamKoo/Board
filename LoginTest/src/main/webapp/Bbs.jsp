@@ -8,21 +8,18 @@
 <head>
 <meta charset="UTF-8">
 <title>게시판</title>
-<style>
-tr td {
-	border: 1px solid black;
-}
-</style>
+<%@ include file="/include/lib.jsp"%>
 </head>
 <body>
 	<%
 	List list = (List) request.getAttribute("list");
 	%>
-	<h1>List Page</h1>
-	목록
-	<button type="button" onclick="location='/BbsCreate.jsp'">작성하기</button>
-	<a href="/Main.jsp">Home</a>
-	<div>
+	<%@ include file="/include/header.jsp"%>
+	<div class="container-fluid" id="table_div">
+
+		<h1 style="text-align: center; margin-top: 20px;">Board List Page</h1>
+		<button onclick="location='/Main.jsp'" type="button" class="btn btn-outline-primary">Home</button>
+		<%-- <div>
 		<table style="border: 1px solid black;">
 			<tr>
 				<td>글번호</td>
@@ -44,6 +41,33 @@ tr td {
 			}
 			%>
 		</table>
+	</div> --%>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">글번호</th>
+					<th scope="col">제목</th>
+					<th scope="col">글내용</th>
+					<th scope="col">날짜</th>
+				</tr>
+			</thead>
+			<tbody>
+			<%
+			for (int i = 0; i < list.size(); i++) {
+				Map item = (Map) list.get(i);
+			%>
+				<tr>
+					<th scope="row"><%=item.get("bbs_Num")%></th>
+					<td><b><a href="/Bbs_View.do?bbs_Num=<%=item.get("bbs_Num")%>"><%=item.get("bbs_Title")%></a></b></td>
+					<td><%=item.get("bbs_Content")%></td>
+					<td><%=item.get("bbs_Regdate")%></td>
+				</tr>
+			<%
+			}
+			%>
+			</tbody>
+		</table>
+		<button type="button" class="btn btn-outline-primary" onclick="location='/BbsCreateForm.do'" style="float: right;">작성하기</button>
 	</div>
 </body>
 </html>

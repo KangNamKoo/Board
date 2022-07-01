@@ -29,7 +29,8 @@ public class Bbs_UpdateProc extends HttpServlet {
 
 	protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 
-		String bbs_Num = req.getParameter("bbs_Num");
+		String str = req.getParameter("bbs_Num");
+		int bbs_Num = Integer.parseInt(str);
 		String bbs_Title = req.getParameter("bbs_Title");
 		String bbs_Content = req.getParameter("bbs_Content");
 		String bbs_Regdate = req.getParameter("bbs_Regdate");

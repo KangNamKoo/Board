@@ -2,7 +2,7 @@ package DTO;
 
 public class Board_DTO {
 
-	private String bbs_Num;
+	private int bbs_Num;
 	private String bbs_Title;
 	private String bbs_Content;
 	private String bbs_Regdate;
@@ -11,7 +11,7 @@ public class Board_DTO {
 
 	}
 
-	public Board_DTO(String bbs_Num, String bbs_Title, String bbs_Content, String bbs_Regdate) {
+	public Board_DTO(int bbs_Num, String bbs_Title, String bbs_Content, String bbs_Regdate) {
 		super();
 		this.bbs_Num = bbs_Num;
 		this.bbs_Title = bbs_Title;
@@ -19,11 +19,11 @@ public class Board_DTO {
 		this.bbs_Regdate = bbs_Regdate;
 	}
 
-	public String getBbs_Num() {
+	public int getBbs_Num() {
 		return bbs_Num;
 	}
 
-	public void setBbs_Num(String bbs_Num) {
+	public void setBbs_Num(int bbs_Num) {
 		this.bbs_Num = bbs_Num;
 	}
 
