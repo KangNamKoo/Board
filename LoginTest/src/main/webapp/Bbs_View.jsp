@@ -71,7 +71,7 @@
 			<div class="container" id="num">
 				<div class="row">
 					<div class="col" style="background-color: gray">글번호</div>
-					<div class="col"><%=dto.getBbs_Num()%></div>
+					<div class="col"><b><%=dto.getBbs_Num()%></b></div>
 					<div class="col" style="background-color: gray">
 						생성 날짜 :
 						<%=dto.getBbs_Regdate()%></div>

@@ -80,13 +80,14 @@ public class Board_DAO {
 	public void setlist(Board_DTO bDto) {
 
 		String SQL = "INSERT INTO board VALUES(?, ?, ?, ?)";
+		Board_DAO dao = new Board_DAO();
 
 		try {
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setInt(1, bDto.getBbs_Num());
 			pstmt.setString(2, bDto.getBbs_Title());
 			pstmt.setString(3, bDto.getBbs_Content());
-			pstmt.setString(4, bDto.getBbs_Regdate());
+			pstmt.setString(4, dao.getDate());
 			pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -118,12 +119,13 @@ public class Board_DAO {
 	// 게시판 수정
 	public int update(Board_DTO bDto) {
 		String SQL = "UPDATE board SET bbs_Title =?, bbs_Content =?, bbs_Regdate =? WHERE bbs_Num =?";
+		Board_DAO dao = new Board_DAO();
 
 		try {
 			pstmt = conn.prepareStatement(SQL);
 			pstmt.setString(1, bDto.getBbs_Title());
 			pstmt.setString(2, bDto.getBbs_Content());
-			pstmt.setString(3, bDto.getBbs_Regdate());
+			pstmt.setString(3, dao.getDate());
 			pstmt.setInt(4, bDto.getBbs_Num());
 			result = pstmt.executeUpdate();
 		} catch (SQLException e) {
