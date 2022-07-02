@@ -14,7 +14,7 @@
 }
 </style>
 <%
-	Board_DTO dto = (Board_DTO)request.getAttribute("bbs_Num");
+Board_DTO dto = (Board_DTO) request.getAttribute("bbs_Num");
 %>
 </head>
 <body>
@@ -24,27 +24,11 @@
 	<button onclick="location='/Bbs_View.jsp'" type="button" class="btn btn-outline-primary">뒤로가기</button>
 	<form action="/BbsCreate.do" method="post">
 		<div class="container-fluid">
-			<!-- <div>
-			글번호 : <input type="text" id="num" name="bbs_Num">
-		</div>
-		<div>
-			제목 : <input type="text" id="title" name="bbs_Title">
-		</div>
-		<div>
-			내용 :
-			<textarea rows="30" cols="60" name="bbs_Content"></textarea>
-		</div>
-		<div>
-			날짜 : <input type="text" id="Regdate" name="bbs_Regdate">
-		</div>
-		<div>
-			<input type="submit" value="작성하기">
-		</div> -->
 			<div class="mb-3">
 				<label for="exampleFormControlInput1" class="form-label">글제목</label> 
-				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="글제목" name="bbs_Title">
-				<input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="숫자" name="bbs_Num" value=<%=dto.getBbs_Num() %>>
-				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="날짜" name="bbs_Regdate">
+				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="글제목" name="bbs_Title"> 
+				<input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="숫자" name="bbs_Num"value=<%=dto.getBbs_Num()%>> 
+				<input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="날짜" name="bbs_Regdate" value=<%=dto.getBbs_Regdate() %>>
 			</div>
 			<div class="mb-3">
 				<label for="exampleFormControlTextarea1" class="form-label">글내용</label>

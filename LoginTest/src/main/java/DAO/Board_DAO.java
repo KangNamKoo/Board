@@ -34,6 +34,22 @@ public class Board_DAO {
 			e.printStackTrace();
 		}
 	}
+	
+	// 날짜 불러오는 코드
+	public String getDate() {
+		String SQL = "SELECT NOW()";	// 현재시간을 나타내는 mysql
+		
+		try {
+			pstmt = conn.prepareStatement(SQL);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				return rs.getString(1);	// ? 왜 1이 들어가지
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		return "";	//데이터 베이스 오류
+	}
 
 	// 게시판 리스트 보여주는 코드
 	public List getlist() {

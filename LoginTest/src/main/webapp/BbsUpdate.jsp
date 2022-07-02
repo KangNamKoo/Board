@@ -40,7 +40,7 @@
 				<label for="exampleFormControlInput1" class="form-label">글제목</label> 
 				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="글제목" name="bbs_Title" value="${bbs_view.bbs_Title}">
 				<input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="숫자" name="bbs_Num" value="${bbs_view.bbs_Num}">
-				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="날짜" name="bbs_Regdate" value="${bbs_view.bbs_Regdate}">
+				<input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="날짜" name="bbs_Regdate" value="${bbs_view.bbs_Regdate}">
 			</div>
 			<div class="mb-3">
 				<label for="exampleFormControlTextarea1" class="form-label">글내용</label>
