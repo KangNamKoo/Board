@@ -19,29 +19,6 @@
 
 		<h1 style="text-align: center; margin-top: 20px;">Board List Page</h1>
 		<button onclick="location='/Main.jsp'" type="button" class="btn btn-outline-primary">Home</button>
-		<%-- <div>
-		<table style="border: 1px solid black;">
-			<tr>
-				<td>글번호</td>
-				<td>글제목</td>
-				<td>글내용</td>
-				<td>작성일</td>
-			</tr>
-			<%
-			for (int i = 0; i < list.size(); i++) {
-				Map item = (Map) list.get(i);
-			%>
-			<tr>
-				<td><%=item.get("bbs_Num")%></td>
-				<td><b><a href="/Bbs_View.do?bbs_Num=<%=item.get("bbs_Num")%>"><%=item.get("bbs_Title")%></a></b></td>
-				<td><%=item.get("bbs_Content")%></td>
-				<td><%=item.get("bbs_Regdate")%></td>
-			</tr>
-			<%
-			}
-			%>
-		</table>
-	</div> --%>
 		<table class="table">
 			<thead>
 				<tr>

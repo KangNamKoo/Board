@@ -24,28 +24,6 @@
 		requestForm.submit();
 	}
 </script>
-<style>
-#detail_view{
-	border: 1px solid black;
-	height: 700px;
-	width: 900px;
-}
-
-#title {
-	border: 1px solid black;
-	text-align: center;
-}
-
-#num {
-	border: 1px solid black;
-	text-align: center;
-}
-
-#content_title {
-	border: 1px solid black;
-	text-align: center;
-}
-</style>
 </head>
 <body>
 	<form id="requestForm" action="/Bbs_UpdateList.do" method="post">

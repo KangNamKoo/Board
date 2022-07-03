@@ -5,35 +5,6 @@
 <meta charset="UTF-8">
 <title>회원가입</title>
 <%@ include file="/include/lib.jsp"%>
-<style>
-#join_text {
-	text-align: center;
-}
-
-#join {
-	text-align: center;
-	height: 400px;
-	width: 500px;
-	background-color: #DEDEDE;
-	margin: auto;
-	margin-top: 80px;
-	border-radius: 18px 18px 18px 18px;
-}
-
-#id {
-	margin-top: 40px;
-}
-
-#pw {
-	margin-top: 20px;
-}
-#name{
-	margin-top: 20px;
-}
-#tel{
-	margin-top: 20px;
-}
-</style>
 </head>
 <body>
 	<%@ include file="/include/header.jsp"%>
