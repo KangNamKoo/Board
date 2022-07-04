@@ -22,7 +22,7 @@
 			</div>
 		</div>
 	</div>
-	<%-- 로그인 상태 :dddd
+	<%-- 로그인 상태 :ddddd
 	<%=session.getAttribute("bbs_Id")%> --%>
 </body>
 </html>
