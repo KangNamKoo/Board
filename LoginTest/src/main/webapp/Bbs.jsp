@@ -14,6 +14,17 @@
 	<%
 	List list = (List) request.getAttribute("list");
 	%>
+	<script>
+		function bbs_check(){
+			var id = '<%=session.getAttribute("bbs_Id")%>';
+			
+			if(id=="null"){
+				alert('로그인이 필요한 기능입니다.');
+			} else{
+				location.href="/BbsCreateForm.do";
+			}
+		}
+	</script>
 	<%@ include file="/include/header.jsp"%>
 	<div class="container-fluid" id="table_div">
 
@@ -44,7 +55,7 @@
 			%>
 			</tbody>
 		</table>
-		<button type="button" class="btn btn-outline-primary" onclick="location='/BbsCreateForm.do'" style="float: right;">작성하기</button>
+		<button type="button" class="btn btn-outline-primary" onclick="bbs_check();" style="float: right;">작성하기</button>
 	</div>
 </body>
 </html>

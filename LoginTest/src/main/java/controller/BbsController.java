@@ -32,7 +32,6 @@ public class BbsController extends HttpServlet {
 		Board_DAO bDao = new Board_DAO();
 		List list = bDao.getlist();
 		req.setAttribute("list", list);
-		HttpSession session = req.getSession();
 		req.getRequestDispatcher("/Bbs.jsp").forward(req, response);
 
 	}
