@@ -18,12 +18,7 @@ Board_DTO dto = (Board_DTO) request.getAttribute("bbs_Num");
 		script.println("alert('로그인이 필요합니다.')");
 		script.println("location.href='/Main.jsp'");
 		script.println("</script>");
-	} else if(id!=null){
-		PrintWriter script = response.getWriter();
-		script.println("<script>");
-		script.println("location.href='/BbsCreateForm.do'");
-		script.println("</script>");
-	}
+	} 
 %>
 </head>
 <body>
