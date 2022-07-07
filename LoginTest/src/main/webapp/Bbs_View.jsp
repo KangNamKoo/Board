@@ -63,8 +63,6 @@
 				</div>
 			</div>
 		</div>
-		<%-- <input style="border: 1px solid black; height: 80px; width: 100px; margin: auto; margin-top: 40px; text-align: center;" onclick="fnUpdateForm(<%=dto.getBbs_Num()%>)" type="button" value="수정하기">  --%>
-		<%-- <input style="border: 1px solid black; height: 80px; width: 100px; margin: auto; margin-top: 40px; text-align: center;" onclick="fnDelete(<%=dto.getBbs_Num()%>)" type="button" value="삭제하기"> --%>
 		<button type="submit" class="btn btn-outline-primary" style="float: right; height: 80px; width: 100px; margin: auto; margin-top: 40px; text-align: center;" onclick="location='/Bbs.do'">목록</button>
 		<button type="submit" class="btn btn-outline-primary" style="float: right; height: 80px; width: 100px; margin: auto; margin-top: 40px; text-align: center;" onclick="fnUpdateForm(<%=dto.getBbs_Num()%>)">수정하기</button>
 		<button type="submit" class="btn btn-outline-primary" style="float: right; height: 80px; width: 100px; margin: auto; margin-top: 40px; text-align: center;" onclick="fnDelete(<%=dto.getBbs_Num()%>)">삭제하기</button>

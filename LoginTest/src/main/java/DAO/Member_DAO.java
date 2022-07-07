@@ -47,7 +47,7 @@ public class Member_DAO {
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
 				if (rs.getString(1).equals(bbs_Pw)) {
-					System.out.println("넘어감"); // 여기서 안넘어감
+					System.out.println("넘어감");
 					return 1; // 로그인 성공
 				} else {
 					return 0; // 비밀번호 불일치

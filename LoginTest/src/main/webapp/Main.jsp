@@ -22,7 +22,5 @@
 			</div>
 		</div>
 	</div>
-	<%-- 로그인 상태 :
-	<%=session.getAttribute("bbs_Id")%> --%>
 </body>
 </html>

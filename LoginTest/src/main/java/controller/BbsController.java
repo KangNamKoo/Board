@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import DAO.Board_DAO;
 
@@ -31,6 +32,7 @@ public class BbsController extends HttpServlet {
 		Board_DAO bDao = new Board_DAO();
 		List list = bDao.getlist();
 		req.setAttribute("list", list);
+		HttpSession session = req.getSession();
 		req.getRequestDispatcher("/Bbs.jsp").forward(req, response);
 
 	}

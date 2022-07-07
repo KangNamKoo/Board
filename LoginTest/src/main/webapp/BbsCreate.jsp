@@ -15,7 +15,7 @@ Board_DTO dto = (Board_DTO) request.getAttribute("bbs_Num");
 	<%@ include file="/include/header.jsp"%>
 	<h1 style="text-align: center; margin-top: 20px;">작성페이지</h1>
 	<button onclick="location='/Main.jsp'" type="button" class="btn btn-outline-primary">Home</button>
-	<button onclick="location='/Bbs_View.jsp'" type="button" class="btn btn-outline-primary">뒤로가기</button>
+	<button onclick="location='/Bbs.do'" type="button" class="btn btn-outline-primary">뒤로가기</button>
 	<form action="/BbsCreate.do" method="post">
 		<div class="container-fluid">
 			<div class="mb-3">
