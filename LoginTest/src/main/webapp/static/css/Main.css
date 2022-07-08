@@ -3,12 +3,36 @@
 #head_menu{
 	border-bottom: 0.5px solid gray;
 }
+#head_menu li a{
+	color: black;
+}
 
 /* Main */
 #content{
-	margin-top: 40px;
 	text-align: center;
 }
-#content_text{
-	color: white;
+
+/* Footer */
+#foot{
+	height: 150px;
+	margin-top:50px;
+}
+#GymK_logo{
+	height: 150px;
+	width: 300px;
+}
+#foot_content{
+	margin:auto;
+	border-right: 1px solid gray;
+	font-size: 14px;
+}
+#foot_logo{
+	text-align: center;
+}
+#foot_logo img{
+	height: 150px;
+	width: 35px;
+	position:relative;
+	top: 57.5;	
+	margin-right: 30px;
 }
