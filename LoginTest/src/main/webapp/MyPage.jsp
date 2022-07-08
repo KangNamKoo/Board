@@ -6,19 +6,28 @@
 <title>My Page</title>
 <%@ include file="/include/lib.jsp"%>
 <style>
-img{
-	height: 700px;
-	width: 400px;
+#test{
+	border: 1px solid black;
+}
+#test div{
+	border: 1px solid black;
 }
 </style>
 </head>
 <body>
 	<%@ include file="/include/header.jsp"%>
 	<h1>마이페이지</h1>
-	<table>
-  <tr>
-    <td><img src="/static/img/남자데드.jpeg" /></td><td><img src="/static/img/남자이두.jpeg" /></td><td><img src="/static/img/여자등.jpeg" /></td>
-  <tr>
-</table>
+	<div id="test" class="container">
+		<div class="row">
+			<div class="col">Column</div>
+			<div class="col">Column</div>
+			<div class="col">Column</div>
+			<div class="col">Column</div>
+			<div class="col">Column</div>
+			<div class="col">Column</div>
+			<div class="col">Column</div>
+			<div class="col">Column</div>
+		</div>
+	</div>
 </body>
 </html>

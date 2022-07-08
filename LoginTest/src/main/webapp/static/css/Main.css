@@ -4,9 +4,28 @@
 	border-bottom: 0.5px solid gray;
 }
 #head_menu li a{
-	color: black;
+	color: rgb(233,95,63);
 }
 
+/* Nav */
+#con {
+	text-align: center;;
+	width: 100%;
+}
+#con_text {
+	height: 55px;
+	color: #cccccc;
+}
+#con_text #con {
+	border: 0.5px solid black;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+}
+#con_text div{
+	background-color: black;
+}
 /* Main */
 #content{
 	text-align: center;
