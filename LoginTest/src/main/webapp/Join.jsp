@@ -17,7 +17,7 @@
 					<h2>회원가입</h2>
 					<div class="container">
 						<div id="id">
-							<input type="text" name="bbs_Name" placeholder="아이디를 입력하세요.">
+							<input type="text" name="bbs_Id" placeholder="아이디를 입력하세요.">
 						</div>
 						<div id="pw">
 							<input type="password" name="bbs_Pw" placeholder="비밀번호를 입력하세요.">
