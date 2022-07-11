@@ -17,6 +17,7 @@
 </head>
 <body>
 	<%@ include file="/include/header.jsp"%>
+	<%@ include file="/include/Nav.jsp"%>
 	<h1>마이페이지</h1>
 	<div id="test" class="container">
 		<div class="row">

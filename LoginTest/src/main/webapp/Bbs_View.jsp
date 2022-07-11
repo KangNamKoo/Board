@@ -33,6 +33,7 @@
 	Board_DTO dto = (Board_DTO) request.getAttribute("bbs_view");
 	%>
 	<%@ include file="/include/header.jsp"%>
+	<%@ include file="/include/Nav.jsp"%>
 	<h1 style="text-align: center; margin-top: 20px;">Board Detail Page</h1>
 	<div id="container-fluid">
 

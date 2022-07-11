@@ -8,6 +8,7 @@
 </head>
 <body>
 	<%@ include file="/include/header.jsp"%>
+	<%@ include file="/include/Nav.jsp"%>
 	<h1 style="text-align: center; margin-top: 20px;">수정페이지</h1>
 	<button onclick="location='/Main.jsp'" type="button" class="btn btn-outline-primary">Home</button>
 	<button onclick="location='/Bbs_View.jsp'" type="button" class="btn btn-outline-primary">뒤로가기</button>

@@ -2,7 +2,7 @@
 <div id="foot" class="container-fluid">
 	<div class="row">
 		<div class="col" style="text-align: center">
-			<a href="/jsp/main.jsp"><img id="GymK_logo" alt="dev.com" src="/static/img/GymK.png"></a>
+			<a href="/Main.jsp"><img id="GymK_logo" alt="dev.com" src="/static/img/GymK.png"></a>
 		</div>
 		<div id="foot_content" class="col">
 			<p class="text"><b>Company : GymK</b></p>

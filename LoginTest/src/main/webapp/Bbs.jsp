@@ -27,6 +27,7 @@
 		}
 	</script>
 	<%@ include file="/include/header.jsp"%>
+	<%@ include file="/include/Nav.jsp"%>
 	<div class="container-fluid" id="table_div">
 
 		<h1 style="text-align: center; margin-top: 20px;">Board List Page</h1>
