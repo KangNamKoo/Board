@@ -65,7 +65,7 @@ public class Board_DAO {
 				Map item = new HashMap();
 				item.put("bbs_Num", rs.getString("bbs_Num"));
 				item.put("bbs_Title", rs.getString("bbs_Title"));
-				item.put("bbs_Content", rs.getString("bbs_Content"));
+				item.put("bbs_UserId", rs.getString("bbs_UserId"));
 				item.put("bbs_Regdate", rs.getString("bbs_Regdate"));
 				list.add(item);
 			}
@@ -79,7 +79,7 @@ public class Board_DAO {
 	// 글쓰기
 	public void setlist(Board_DTO bDto) {
 
-		String SQL = "INSERT INTO board VALUES(?, ?, ?, ?)";
+		String SQL = "INSERT INTO board VALUES(?, ?, ?, ?, ?)";
 		Board_DAO dao = new Board_DAO();
 
 		try {
@@ -88,6 +88,7 @@ public class Board_DAO {
 			pstmt.setString(2, bDto.getBbs_Title());
 			pstmt.setString(3, bDto.getBbs_Content());
 			pstmt.setString(4, dao.getDate());
+			pstmt.setString(5, bDto.getBbs_UserId());
 			pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();

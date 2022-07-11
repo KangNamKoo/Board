@@ -6,19 +6,21 @@ public class Board_DTO {
 	private String bbs_Title;
 	private String bbs_Content;
 	private String bbs_Regdate;
+	private String bbs_UserId;
 
 	public Board_DTO() {
 
 	}
 
-	public Board_DTO(int bbs_Num, String bbs_Title, String bbs_Content, String bbs_Regdate) {
+	public Board_DTO(int bbs_Num, String bbs_Title, String bbs_Content, String bbs_Regdate, String bbs_UserId) {
 		super();
 		this.bbs_Num = bbs_Num;
 		this.bbs_Title = bbs_Title;
 		this.bbs_Content = bbs_Content;
 		this.bbs_Regdate = bbs_Regdate;
+		this.bbs_UserId = bbs_UserId;
 	}
-
+	
 	public int getBbs_Num() {
 		return bbs_Num;
 	}
@@ -50,5 +52,15 @@ public class Board_DTO {
 	public void setBbs_Regdate(String bbs_Regdate) {
 		this.bbs_Regdate = bbs_Regdate;
 	}
+
+	public String getBbs_UserId() {
+		return bbs_UserId;
+	}
+
+	public void setBbs_UserId(String bbs_UserId) {
+		this.bbs_UserId = bbs_UserId;
+	}
+	
+	
 
 }

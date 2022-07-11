@@ -29,8 +29,11 @@ Board_DTO dto = (Board_DTO) request.getAttribute("bbs_Num");
 	<form action="/BbsCreate.do" method="post">
 		<div class="container-fluid">
 			<div class="mb-3">
-				<label for="exampleFormControlInput1" class="form-label">글제목</label> <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="글제목" name="bbs_Title"> <input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="숫자" name="bbs_Num"
-					value=<%=dto.getBbs_Num()%>> <input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="날짜" name="bbs_Regdate" value=<%=dto.getBbs_Regdate()%>>
+				<label for="exampleFormControlInput1" class="form-label">글제목</label> 
+				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="글제목" name="bbs_Title"> 
+				<input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="숫자" name="bbs_Num" value=<%=dto.getBbs_Num()%>> 
+				<input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="날짜" name="bbs_Regdate" value=<%=dto.getBbs_Regdate()%>>
+				<input type="hidden" class="form-control" id="exampleFormControlInput1" placeholder="작성자 아이디" name="bbs_UserId" value=<%=session.getAttribute("bbs_Id")%>>
 			</div>
 			<div class="mb-3">
 				<label for="exampleFormControlTextarea1" class="form-label">글내용</label>

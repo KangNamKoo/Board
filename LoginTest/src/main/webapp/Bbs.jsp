@@ -35,7 +35,7 @@
 				<tr>
 					<th scope="col">글번호</th>
 					<th scope="col">제목</th>
-					<th scope="col">글내용</th>
+					<th scope="col">작성자</th>
 					<th scope="col">날짜</th>
 				</tr>
 			</thead>
@@ -47,7 +47,7 @@
 				<tr>
 					<th scope="row"><%=item.get("bbs_Num")%></th>
 					<td><b><a href="/Bbs_View.do?bbs_Num=<%=item.get("bbs_Num")%>"><%=item.get("bbs_Title")%></a></b></td>
-					<td><%=item.get("bbs_Content")%></td>
+					<td><%=item.get("bbs_UserId")%></td>
 					<td><%=item.get("bbs_Regdate")%></td>
 				</tr>
 			<%

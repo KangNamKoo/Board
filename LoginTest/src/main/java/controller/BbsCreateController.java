@@ -34,10 +34,11 @@ public class BbsCreateController extends HttpServlet {
 		String bbs_Title = req.getParameter("bbs_Title");
 		String bbs_Content = req.getParameter("bbs_Content");
 		String bbs_Regdate = req.getParameter("bbs_Regdate");
+		String bbs_UserId = req.getParameter("bbs_UserId");
 
 		try {
 			Board_DAO dao = new Board_DAO();
-			Board_DTO dto = new Board_DTO(bbs_Num, bbs_Title, bbs_Content, bbs_Regdate);
+			Board_DTO dto = new Board_DTO(bbs_Num, bbs_Title, bbs_Content, bbs_Regdate, bbs_UserId);
 			dao.setlist(dto);
 		} catch (Exception e) {
 			e.printStackTrace();
