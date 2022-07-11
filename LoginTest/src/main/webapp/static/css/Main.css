@@ -1,10 +1,11 @@
 @charset "UTF-8";
 /* header */
-#head_menu{
+#head_menu {
 	border-bottom: 0.5px solid gray;
 }
-#head_menu li a{
-	color: rgb(233,95,63);
+
+#head_menu li a {
+	color: rgb(233, 95, 63);
 }
 
 /* Nav */
@@ -12,10 +13,12 @@
 	text-align: center;;
 	width: 100%;
 }
+
 #con_text {
 	height: 55px;
 	color: #cccccc;
 }
+
 #con_text #con {
 	border: 0.5px solid black;
 	display: flex;
@@ -23,13 +26,11 @@
 	align-items: center;
 	justify-content: center;
 }
-#con_text div{
+
+#con_text div {
 	background-color: black;
 }
 /* Main */
-#content{
-	text-align: center;
-}
 #bb_img {
 	height: 750px;
 	width: 100%;
@@ -39,33 +40,40 @@
 	width: 100%;
 	margin-top: 30px;
 }
+
 #main_content2 {
 	width: 100%;
 	margin-top: 50px;
 }
+
 #main_content3 {
 	width: 100%;
 	margin-top: 50px;
 }
+
 #main_content img {
 	width: 100%;
 	height: 406px;
 	margin-left: 20px;
 }
+
 #main_content2 img {
 	width: 100%;
 	height: 406px;
 	margin-left: -20px;
 }
+
 #main_content3 img {
 	width: 100%;
 	height: 406px;
 	margin-left: 20px;
 }
-#main_content_div{
+
+#main_content_div {
 	text-align: center;
 }
-#main_content_text button{
+
+#main_content_text button {
 	width: 270px;
 	height: 80px;
 	background-color: black;
@@ -73,27 +81,31 @@
 }
 
 /* Footer */
-#foot{
+#foot {
 	height: 150px;
-	margin-top:50px;
+	margin-top: 50px;
 	background-color: white;
 }
-#GymK_logo{
+
+#GymK_logo {
 	height: 150px;
 	width: 300px;
 }
-#foot_content{
-	margin:auto;
+
+#foot_content {
+	margin: auto;
 	border-right: 1px solid gray;
 	font-size: 14px;
 }
-#foot_logo{
+
+#foot_logo {
 	text-align: center;
 }
-#foot_logo img{
+
+#foot_logo img {
 	height: 150px;
 	width: 35px;
-	position:relative;
-	top: 57.5;	
+	position: relative;
+	top: 57.5;
 	margin-right: 30px;
 }

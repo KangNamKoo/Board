@@ -40,8 +40,12 @@
 			<div class="container" id="num">
 				<div class="row">
 					<div class="col" style="background-color: gray">글번호</div>
-					<div class="col"><b><%=dto.getBbs_Num()%></b></div>
-					<div class="col"><b><%=dto.getBbs_UserId()%></b></div>
+					<div class="col">
+						<b><%=dto.getBbs_Num()%></b>
+					</div>
+					<div class="col">
+						<b><%=dto.getBbs_UserId()%></b>
+					</div>
 					<div class="col" style="background-color: gray">
 						생성 날짜 :
 						<%=dto.getBbs_Regdate()%></div>
@@ -55,12 +59,14 @@
 			</div>
 			<div class="container" id="content_title">
 				<div class="row">
-					<div class="col" style="background-color: gray"><h4>글내용</h4></div>
+					<div class="col" style="background-color: gray">
+						<h4>글내용</h4>
+					</div>
 				</div>
 			</div>
 			<div class="container" id="con_content">
 				<div class="row">
-					<div class="col"><%=dto.getBbs_Content() %></div>
+					<div class="col"><%=dto.getBbs_Content()%></div>
 				</div>
 			</div>
 		</div>

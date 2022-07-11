@@ -6,10 +6,11 @@
 <title>My Page</title>
 <%@ include file="/include/lib.jsp"%>
 <style>
-#test{
+#test {
 	border: 1px solid black;
 }
-#test div{
+
+#test div {
 	border: 1px solid black;
 }
 </style>

@@ -16,12 +16,13 @@
 	%>
 	<script>
 		function bbs_check(){
-			var id = '<%=session.getAttribute("bbs_Id")%>';
-			
-			if(id=="null"){
+			var id = '<%=session.getAttribute("bbs_Id")%>
+		';
+
+			if (id == "null") {
 				alert('로그인이 필요한 기능입니다.');
-			} else{
-				location.href="/BbsCreateForm.do";
+			} else {
+				location.href = "/BbsCreateForm.do";
 			}
 		}
 	</script>
@@ -40,19 +41,19 @@
 				</tr>
 			</thead>
 			<tbody>
-			<%
-			for (int i = 0; i < list.size(); i++) {
-				Map item = (Map) list.get(i);
-			%>
+				<%
+				for (int i = 0; i < list.size(); i++) {
+					Map item = (Map) list.get(i);
+				%>
 				<tr>
 					<th scope="row"><%=item.get("bbs_Num")%></th>
 					<td><b><a href="/Bbs_View.do?bbs_Num=<%=item.get("bbs_Num")%>"><%=item.get("bbs_Title")%></a></b></td>
 					<td><%=item.get("bbs_UserId")%></td>
 					<td><%=item.get("bbs_Regdate")%></td>
 				</tr>
-			<%
-			}
-			%>
+				<%
+				}
+				%>
 			</tbody>
 		</table>
 		<button type="button" class="btn btn-outline-primary" onclick="bbs_check();" style="float: right;">작성하기</button>
