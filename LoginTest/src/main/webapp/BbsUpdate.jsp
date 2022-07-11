@@ -24,5 +24,6 @@
 		</div>
 		<button type="submit" class="btn btn-outline-primary" style="float: right;">수정하기</button>
 	</form>
+	<%@ include file="/include/Footer.jsp"%>
 </body>
 </html>

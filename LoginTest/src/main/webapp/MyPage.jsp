@@ -29,5 +29,6 @@
 			<div class="col">Column</div>
 		</div>
 	</div>
+	<%@ include file="/include/Footer.jsp"%>
 </body>
 </html>

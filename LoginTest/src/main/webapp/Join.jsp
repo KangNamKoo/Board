@@ -36,5 +36,6 @@
 			</div>
 		</form>
 	</div>
+	<%@ include file="/include/Footer.jsp"%>
 </body>
 </html>

@@ -68,5 +68,6 @@
 		<button type="submit" class="btn btn-outline-primary" style="float: right; height: 80px; width: 100px; margin: auto; margin-top: 40px; text-align: center;" onclick="fnUpdateForm(<%=dto.getBbs_Num()%>)">수정하기</button>
 		<button type="submit" class="btn btn-outline-primary" style="float: right; height: 80px; width: 100px; margin: auto; margin-top: 40px; text-align: center;" onclick="fnDelete(<%=dto.getBbs_Num()%>)">삭제하기</button>
 	</div>
+	<%@ include file="/include/Footer.jsp"%>
 </body>
 </html>

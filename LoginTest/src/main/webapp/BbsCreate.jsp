@@ -42,5 +42,6 @@ Board_DTO dto = (Board_DTO) request.getAttribute("bbs_Num");
 		</div>
 		<button type="submit" class="btn btn-outline-primary" style="float: right;">작성하기</button>
 	</form>
+	<%@ include file="/include/Footer.jsp"%>
 </body>
 </html>

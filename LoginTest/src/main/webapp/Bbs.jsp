@@ -57,5 +57,6 @@
 		</table>
 		<button type="button" class="btn btn-outline-primary" onclick="bbs_check();" style="float: right;">작성하기</button>
 	</div>
+	<%@ include file="/include/Footer.jsp"%>
 </body>
 </html>

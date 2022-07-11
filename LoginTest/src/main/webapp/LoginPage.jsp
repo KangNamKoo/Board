@@ -27,5 +27,6 @@
 			</div>
 		</div>
 	</form>
+	<%@ include file="/include/Footer.jsp"%>
 </body>
 </html>
