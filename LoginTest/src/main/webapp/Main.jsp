@@ -5,11 +5,6 @@
 <meta charset="UTF-8">
 <title>Main Page</title>
 <%@ include file="/include/lib.jsp"%>
-<script>
-	function(){
-		
-	}
-</script>
 </head>
 <body>
 	<%@ include file="/include/header.jsp"%>
