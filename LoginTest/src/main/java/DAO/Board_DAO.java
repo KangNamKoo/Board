@@ -110,6 +110,7 @@ public class Board_DAO {
 				bDto.setBbs_Title(rs.getString("bbs_Title"));
 				bDto.setBbs_Content(rs.getString("bbs_Content"));
 				bDto.setBbs_Regdate(rs.getString("bbs_Regdate"));
+				bDto.setBbs_UserId(rs.getString("bbs_UserId"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

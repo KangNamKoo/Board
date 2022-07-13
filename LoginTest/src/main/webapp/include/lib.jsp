@@ -8,5 +8,5 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <link href="/static/css/Main.css?after" rel="stylesheet">
 <link href="/static/css/Login.css" rel="stylesheet">
-<link href="/static/css/Board.css" rel="stylesheet">
+<link href="/static/css/Board.css?after" rel="stylesheet">
 <link href="/static/css/Join.css" rel="stylesheet">

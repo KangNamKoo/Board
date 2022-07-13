@@ -7,7 +7,7 @@
 <%@ include file="/include/lib.jsp"%>
 <style>
 #test {
-	border: 1px solid black;
+	border-top: 1px solid black;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;

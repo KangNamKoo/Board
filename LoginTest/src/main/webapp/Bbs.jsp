@@ -9,6 +9,18 @@
 <meta charset="UTF-8">
 <title>게시판</title>
 <%@ include file="/include/lib.jsp"%>
+<style>
+#board_list a{
+	color: black;
+	text-decoration: none;
+}
+#board_list a:hover{
+	text-decoration: underline;
+}
+#board_tr:hover{
+	background-color: rgb(246,246,246);
+}
+</style>
 </head>
 <body>
 	<%
@@ -31,7 +43,7 @@
 
 		<h1 style="text-align: center; margin-top: 20px;">Board List Page</h1>
 		<button onclick="location='/Main.jsp'" type="button" class="btn btn-outline-primary">Home</button>
-		<table class="table">
+		<table id="board_list" class="table">
 			<thead>
 				<tr>
 					<th scope="col">글번호</th>
@@ -45,7 +57,7 @@
 				for (int i = 0; i < list.size(); i++) {
 					Map item = (Map) list.get(i);
 				%>
-				<tr>
+				<tr id="board_tr">
 					<th scope="row"><%=item.get("bbs_Num")%></th>
 					<td><b><a href="/Bbs_View.do?bbs_Num=<%=item.get("bbs_Num")%>"><%=item.get("bbs_Title")%></a></b></td>
 					<td><%=item.get("bbs_UserId")%></td>

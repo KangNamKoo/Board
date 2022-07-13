@@ -1,8 +1,6 @@
 @charset "UTF-8";
 #detail_view{
-	border: 1px solid black;
 	height: 700px;
-	width: 900px;
 }
 
 #title {

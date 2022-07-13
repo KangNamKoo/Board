@@ -24,6 +24,23 @@
 		requestForm.submit();
 	}
 </script>
+<style>
+#regdate {
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: right;
+}
+
+#detail_title {
+	text-align: left;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#detail_title h3 {
+	
+}
+</style>
 </head>
 <body>
 	<form id="requestForm" action="/Bbs_UpdateList.do" method="post">
@@ -34,40 +51,35 @@
 	%>
 	<%@ include file="/include/header.jsp"%>
 	<%@ include file="/include/Nav.jsp"%>
-	<h1 style="text-align: center; margin-top: 20px;">Board Detail Page</h1>
-	<div id="container-fluid">
-
-		<div id="detail_view" style="margin: auto; margin-top: 50px;">
-			<div class="container" id="num">
-				<div class="row">
-					<div class="col" style="background-color: gray">글번호</div>
-					<div class="col">
-						<b><%=dto.getBbs_Num()%></b>
+	<h1 style="text-align: center; margin-top: 20px;">Community</h1>
+	<div style="margin-top: 30px;" class="container">
+		<div style="margin: auto; width: 1000px;" id="detail_view">
+			<div style="border-top: 1px solid black; background-color: rgb(220, 220, 220); height: 50px;" class="container">
+				<div style="height: 50px;" class="row">
+					<div id="detail_title" class="col-9">
+						<h3><%=dto.getBbs_Title()%></h3>
 					</div>
-					<div class="col">
-						<b><%=dto.getBbs_UserId()%></b>
-					</div>
-					<div class="col" style="background-color: gray">
-						생성 날짜 :
-						<%=dto.getBbs_Regdate()%></div>
+					<div id="regdate" style="text-align: right;" class="col-3"><%=dto.getBbs_Regdate()%></div>
 				</div>
 			</div>
-			<div class="container" id="title">
+			<div style="border-top: 1px solid black;" id="userid" class="container">
 				<div class="row">
-					<div class="col-4" style="background-color: gray">글제목</div>
-					<div class="col-8"><%=dto.getBbs_Title()%></div>
+					<div id="detail_userid" class="col-8">
+						<%=dto.getBbs_UserId()%>
+					</div>
+					<div class="col-4">조회수</div>
 				</div>
 			</div>
-			<div class="container" id="content_title">
+			<div style="border-top: 1px solid black" class="container">
 				<div class="row">
-					<div class="col" style="background-color: gray">
-						<h4>글내용</h4>
+					<div style="height: 550px;" id="detail_content" class="col">
+						<%=dto.getBbs_Content()%>
 					</div>
 				</div>
 			</div>
-			<div class="container" id="con_content">
+			<div style="margin-top: 40px; border-top: 1px solid black; border-bottom: 1px solid black;" class="container">
 				<div class="row">
-					<div class="col"><%=dto.getBbs_Content()%></div>
+					<div id="detail_file" class="col">파일명</div>
 				</div>
 			</div>
 		</div>

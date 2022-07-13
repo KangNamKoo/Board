@@ -30,7 +30,7 @@
 				<p>
 				<h5>부위별로 원하는 운동을 해보세요</h5>
 				<br>
-				<button>
+				<button type="button" onclick="설정">
 					<h5>Workout Routine</h5>
 				</button>
 			</div>
