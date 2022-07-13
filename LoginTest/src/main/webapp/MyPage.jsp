@@ -8,10 +8,14 @@
 <style>
 #test {
 	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
-
 #test div {
 	border: 1px solid black;
+	height: 50px;
+	width: 50px;
 }
 </style>
 </head>
@@ -20,16 +24,11 @@
 	<%@ include file="/include/Nav.jsp"%>
 	<h1>마이페이지</h1>
 	<div id="test" class="container">
-		<div class="row">
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-			<div class="col">Column</div>
-		</div>
+		<div class="item">test</div>
+		<div class="item">test</div>
+		<div class="item">test</div>
+		<div class="item">test</div>
+		<div class="item">test</div>
 	</div>
 	<%@ include file="/include/Footer.jsp"%>
 </body>

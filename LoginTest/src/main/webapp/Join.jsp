@@ -8,9 +8,9 @@
 </head>
 <body>
 	<%@ include file="/include/header.jsp"%>
+	<%@ include file="/include/Nav.jsp"%>
 	<div class="container-fluid">
 
-		<h1 id="join_text">Join Page</h1>
 		<form action="/Join.do" method="post">
 			<div class="container">
 				<div class="col-4" id="join">

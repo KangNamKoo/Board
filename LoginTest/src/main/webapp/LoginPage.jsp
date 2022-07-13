@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%@ include file="/include/header.jsp"%>
-	<h1 id="login_text">Login Page</h1>
+	<%@ include file="/include/Nav.jsp"%>
 	<form action="/LoginPage.do" method="post">
 		<div class="container">
 			<div class="col-4" id="login">

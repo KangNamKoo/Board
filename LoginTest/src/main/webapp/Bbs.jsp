@@ -16,8 +16,7 @@
 	%>
 	<script>
 		function bbs_check(){
-			var id = '<%=session.getAttribute("bbs_Id")%>
-		';
+			var id = '<%=session.getAttribute("bbs_Id")%>';
 
 			if (id == "null") {
 				alert('로그인이 필요한 기능입니다.');

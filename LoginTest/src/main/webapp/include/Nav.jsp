@@ -4,7 +4,7 @@
 		<div class="row" id="con_text">
 		<div class="col"></div>
 		<div class="col"></div>
-			<div id="con" onclick="location.href='/Bbs.do'" class="col" style="border-right: 0.5px solid gray;">
+			<div id="con" onclick="location.href='/WorkoutRoutine_Chest.jsp'" class="col" style="border-right: 0.5px solid gray;">
 				<h5>Workout Routine</h5>
 			</div>
 			<div id="con" onclick="location.href='/Bbs.do'" class="col" style="border-right: 0.5px solid gray;">
