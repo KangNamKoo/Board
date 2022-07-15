@@ -5,6 +5,11 @@
 <meta charset="UTF-8">
 <title>Main Page</title>
 <%@ include file="/include/lib.jsp"%>
+<script>
+function fnwr(){
+	location.href = '/WorkoutRoutine_Chest.jsp'
+}
+</script>
 </head>
 <body>
 	<%@ include file="/include/header.jsp"%>
@@ -30,7 +35,7 @@
 				<p>
 				<h5>부위별로 원하는 운동을 해보세요</h5>
 				<br>
-				<button type="button" onclick="설정">
+				<button type="button" onclick="fnwr();">
 					<h5>Workout Routine</h5>
 				</button>
 			</div>
@@ -78,7 +83,7 @@
 				<p>
 				<h5>혼자가 아닌 함께 운동을 해보세요</h5>
 				<br>
-				<button onclick="location.href=''">
+				<button onclick="">
 					<h5>Workout Partner</h5>
 				</button>
 			</div>
